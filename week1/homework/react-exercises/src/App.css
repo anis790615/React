@@ -1,0 +1,16 @@
+body {
+    width: 100vw;
+}
+#root {
+    width: 100%;
+}
+.App {
+    max-width: 70%;
+    margin: 1rem auto;
+}
+.guarantee {
+    text-align: center;
+    padding: 1rem;
+    display: inline-block;
+    width: 250px;
+}
