@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+}
+.App {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.friend {
+    background: blanchedalmond;
+    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.friendButton {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background: goldenrod;
+    font-size: 1rem;
+    outline-color: goldenrod;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.friendCard {
+    list-style: none;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    align-self: flex-start;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
