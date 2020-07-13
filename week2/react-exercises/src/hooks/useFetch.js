@@ -6,7 +6,7 @@ function useFetch(url, dependencies, initialState) {
     // the isLoaded parameter is used to check so not to display anything if no data was fetched yet, mostly used in the first exercises.
     const [isLoaded, setIsLoaded] = useState(false);
     useEffect(() => {
-        //  Acheck was make so not to load on component mount, mostly due to exercise description. In the third exercises, the initial state of the counter in the dependency is set to 1 so it fetches immediately.
+        //  A check was make so not to load on component mount, mostly due to exercise description. In the third exercises, the initial state of the counter in the dependency is set to 1 so it fetches immediately.
         if (dependencies[0] !== 0) {
             fetch(url)
                 .then((response) => response.json())
