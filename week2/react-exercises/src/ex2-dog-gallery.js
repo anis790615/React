@@ -9,8 +9,7 @@ function DogGallery() {
     const clickHandler = () => {
         setCounter((prevCount) => prevCount + 1);
     };
-    const [fetchedData] = useFetch(URL, [counter], []);
-    console.log(fetchedData);
+    const [fetchedData] = useFetch(URL, [counter, false], []);
 
     return (
         <div className="dogGallery">
