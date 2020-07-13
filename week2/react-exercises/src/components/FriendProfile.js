@@ -2,20 +2,23 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FriendProfile = ({profile, loaded}) => {
-    const {name, location, email, phone} = profile;
+    if (loaded) {
+        profile = profile.results[0];
+    }
     return (
         <>
             {loaded && (
                 <ul className="friendCard">
                     <li>
-                        Name: {name.first} {name.last}
+                        Name: {profile.name.first} {profile.name.last}
                     </li>
                     <li>
-                        Address: {location.street.name} {location.street.number}
-                        , {location.city} {location.country}
+                        Address: {profile.location.street.name}{" "}
+                        {profile.location.street.number},{" "}
+                        {profile.location.city} {profile.location.country}
                     </li>
-                    <li>Email: {email}</li>
-                    <li>Phone: {phone}</li>
+                    <li>Email: {profile.email}</li>
+                    <li>Phone: {profile.phone}</li>
                 </ul>
             )}
         </>

@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.friendButton {
+.button {
     padding: 0.5rem 1rem;
     margin: 1rem;
     background: goldenrod;
@@ -35,4 +35,25 @@ body {
     align-self: flex-start;
     padding-left: 1rem;
     padding-top: 1rem;
+}
+.dogGallery {
+    background: teal;
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+.dogPhoto {
+    height: 100px;
+    padding: 0.2rem;
+    background: bisque;
+}
+.dogPhoto img {
+    height: 100%;
+}
+.galleryWrapper {
+    display: flex;
+    flex-flow: row wrap;
 }

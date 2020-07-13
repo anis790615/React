@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function Button({clickHandler}) {
+export default function Button({onClick, children}) {
     return (
-        <button className="friendButton" onClick={clickHandler}>
-            Get a friend!
+        <button className="button" onClick={onClick}>
+            {children}
         </button>
     );
 }
 Button.propTypes = {
-    clickHandler: PropTypes.func.isRequired,
+    onClick: PropTypes.func.isRequired,
 };
