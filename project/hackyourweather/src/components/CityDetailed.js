@@ -39,7 +39,7 @@ function CityDetailed({ setError, setErrorMessage }) {
         setErrorMessage(error.message);
       }
     })();
-  }, [id]);
+  }, [id, setError, setErrorMessage]);
 
   return (
     <>
